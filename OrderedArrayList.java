@@ -100,9 +100,9 @@ public class OrderedArrayList {
     // return index of occurrence or -1 if not found
     public int findLin( Comparable target ) 
     { 
-	for( int p = 0; p < _data.size(); p++ ) {
+	for( int p = 0; p < _data.size(); p++ ) {//go through each item
 	    if ( target.compareTo( _data.get(p) ) == 0 ) {
-	        return p;
+	        return p;//index of item found
 	    }
 	}
         return -1; //not found
@@ -222,10 +222,10 @@ public class OrderedArrayList {
 
 	Franz = new OrderedArrayList();
 
-	long size = 100000;
-	long time;
-	long time1;
-	long time2;
+	long size = 100000;// currentTimeMillis is a long
+	long time; //will be time lapsed
+	long time1;//will be time at start of run
+	long time2;//will be time after run
 	
 	// populate Franz
 	for( int i = 0; i < size; i++ ) {
@@ -236,14 +236,14 @@ public class OrderedArrayList {
 	// testing findLin()	    
 	System.out.println("\ntesting linear search");
 
-	time1 = System.currentTimeMillis();
+	time1 = System.currentTimeMillis();//right before findlin
 	
-	for (int i = 0; i < size; i++ ) {
+	for (int i = 0; i < size; i++ ) {//running
 	    Franz.findLin( i );
 	}
 
-	time2 = System.currentTimeMillis();
-	time = time2 - time1;
+	time2 = System.currentTimeMillis();//after run
+	time = time2 - time1;//time taken to do the work
 	System.out.println("\nLinear Search Time: " + time);
 
 
@@ -251,14 +251,14 @@ public class OrderedArrayList {
 	// testing findBin()
 	System.out.println("\ntesting binary search");
 
-	time1 = System.currentTimeMillis();
+	time1 = System.currentTimeMillis();//before run
 
-	for (int i = 0; i < size; i++ ) {
+	for (int i = 0; i < size; i++ ) {//running
 	    Franz.findBin( i );
 	}
 
-	time2 = System.currentTimeMillis();
-	time = time2 - time1;
+	time2 = System.currentTimeMillis();//after run
+	time = time2 - time1;//time elapsed
 	System.out.println("\nBinary Search Time: " + time);
     }
 
