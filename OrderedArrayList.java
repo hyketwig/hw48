@@ -191,8 +191,8 @@ public class OrderedArrayList {
 
 	// BASIC PRE-TIMING TESTS
 	/*
-	for( int i = 0; i < 1000000000; i++ ) {
-	    Franz.addLinear( i );
+	for( int i = 0; i < 15; i++ ) {
+	    Franz.add( i );
 	}
 	
 	// testing findLin()
