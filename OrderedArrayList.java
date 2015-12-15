@@ -1,4 +1,4 @@
-//Team <team name> -- Jannie Li, Bayle Smith-Salzburg, Denis Duman
+//Team Janniez,Deniz,Baylez -- Jannie Li, Bayle Smith-Salzburg, Denis Duman
 //APCS1 pd10
 //HW48 -- Half ing Time Trials
 //2015-12-14
